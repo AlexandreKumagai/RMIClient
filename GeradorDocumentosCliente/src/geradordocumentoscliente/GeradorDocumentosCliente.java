@@ -10,6 +10,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.Map;
 
 /**
  *
@@ -17,9 +18,6 @@ import java.rmi.registry.Registry;
  */
 public class GeradorDocumentosCliente {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) throws RemoteException, NotBoundException, MalformedURLException, InterruptedException{
         GeradorInterface remoto = null;
         Registry reg=LocateRegistry.getRegistry("169.254.40.49",1429);
